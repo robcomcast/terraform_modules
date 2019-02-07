@@ -1,12 +1,3 @@
-terraform {
-    backend "s3" {
-        bucket  = "cap-sre-configs"
-        key     = "prod/data-stores/mysql/terraform.tfstate"
-        region  = "us-east-1"
-        encrypt = true
-    }
-
-}
 resource "aws_db_instance" "example" {
 
     engine                  = "mysql"

@@ -1,12 +1,3 @@
-terraform {
-    backend "s3" {
-        bucket  = "cap-sre-configs"
-        key     = "prod/services/webserver-cluster/terraform.tfstate"
-        region  = "us-east-1"
-        encrypt = true
-    }
-}
-
 data "terraform_remote_state" "db" {
     backend = "s3"
 
