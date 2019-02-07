@@ -1,7 +1,7 @@
 terraform {
     backend "s3" {
         bucket  = "cap-sre-configs"
-        key     = "stage/data-stores/mysql/terraform.tfstate"
+        key     = "prod/data-stores/mysql/terraform.tfstate"
         region  = "us-east-1"
         encrypt = true
     }
