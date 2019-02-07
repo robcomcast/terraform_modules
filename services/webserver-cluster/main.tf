@@ -1,7 +1,7 @@
 terraform {
     backend "s3" {
-        bucket  = "${var.cluster_remote_state_bucket}"
-        key     = "${var.cluster_remote_state_key}"
+        bucket  = "cap-sre-configs"
+        key     = "prod/services/webserver-cluster/terraform.tfstate"
         region  = "us-east-1"
         encrypt = true
     }
